@@ -1,7 +1,5 @@
 package com.wgke.adapter.cell;
 
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
 
 import com.wgke.adapter.cell.ob.CellObservable;
 import com.wgke.adapter.cell.ob.CellObserver;
@@ -12,6 +10,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.Nullable;
 
 /**
  * Created by wangke on 2018/11/15.

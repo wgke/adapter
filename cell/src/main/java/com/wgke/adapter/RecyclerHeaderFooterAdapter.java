@@ -4,18 +4,19 @@ package com.wgke.adapter;
  * Created by wangke on 2018/11/15.
  */
 
-import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.GridLayoutManager.SpanSizeLookup;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.Adapter;
-import android.support.v7.widget.RecyclerView.LayoutManager;
-import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.Adapter;
+import androidx.recyclerview.widget.RecyclerView.LayoutManager;
+import androidx.recyclerview.widget.RecyclerView.ViewHolder;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 public abstract class RecyclerHeaderFooterAdapter<VH extends ViewHolder> extends Adapter<VH> {
     private static final int ITEM_TYPE_HEADER = 1;
@@ -223,8 +224,8 @@ public abstract class RecyclerHeaderFooterAdapter<VH extends ViewHolder> extends
         LayoutManager layoutManager = recyclerView.getLayoutManager();
         if(layoutManager instanceof GridLayoutManager) {
             final GridLayoutManager gridLayoutManager = (GridLayoutManager)layoutManager;
-            final SpanSizeLookup oldSizeLookup = gridLayoutManager.getSpanSizeLookup();
-            gridLayoutManager.setSpanSizeLookup(new SpanSizeLookup() {
+            final GridLayoutManager.SpanSizeLookup oldSizeLookup = gridLayoutManager.getSpanSizeLookup();
+            gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
                 public int getSpanSize(int position) {
                     int fixedPosition = RecyclerHeaderFooterAdapter.this.fixLoopPosition(position);
                     return RecyclerHeaderFooterAdapter.this.isHeaderItem(fixedPosition) && RecyclerHeaderFooterAdapter.this.singleLineHeaderEnable?gridLayoutManager.getSpanCount():(RecyclerHeaderFooterAdapter.this.isFooterItem(fixedPosition) && RecyclerHeaderFooterAdapter.this.singleLineFooterEnable?gridLayoutManager.getSpanCount():(oldSizeLookup != null?oldSizeLookup.getSpanSize(position):0));
@@ -264,8 +265,8 @@ public abstract class RecyclerHeaderFooterAdapter<VH extends ViewHolder> extends
         position = this.fixLoopPosition(position);
         if(this.isHeaderItem(position) && this.singleLineHeaderEnable || this.isFooterItem(position) && this.singleLineFooterEnable) {
             LayoutParams lp = holder.itemView.getLayoutParams();
-            if(lp != null && lp instanceof android.support.v7.widget.StaggeredGridLayoutManager.LayoutParams) {
-                android.support.v7.widget.StaggeredGridLayoutManager.LayoutParams p = (android.support.v7.widget.StaggeredGridLayoutManager.LayoutParams)lp;
+            if(lp != null && lp instanceof StaggeredGridLayoutManager.LayoutParams) {
+                StaggeredGridLayoutManager.LayoutParams p = (StaggeredGridLayoutManager.LayoutParams)lp;
                 p.setFullSpan(true);
             }
         }

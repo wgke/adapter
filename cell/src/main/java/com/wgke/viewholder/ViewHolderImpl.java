@@ -5,7 +5,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.StringRes;
 import android.text.TextWatcher;
 import android.text.method.MovementMethod;
 import android.text.util.Linkify;
@@ -28,6 +27,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import androidx.annotation.StringRes;
 
 
 /**

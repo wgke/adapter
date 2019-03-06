@@ -6,12 +6,13 @@ package com.wgke.adapter;
 
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public abstract class BaseObjectRecyclerAdapter<T, V extends RecyclerView.ViewHolder> extends RecyclerHeaderFooterAdapter<V> {
     private final List<T> dataList;

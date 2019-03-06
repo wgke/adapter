@@ -2,8 +2,6 @@ package com.iwcard.myapplication;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 
 import com.wgke.adapter.cell.Cell;
 import com.wgke.adapter.cell.CellAdapter;
@@ -14,6 +12,9 @@ import com.wgke.viewholder.RVViewHolder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivityTest extends Activity {
     @Override

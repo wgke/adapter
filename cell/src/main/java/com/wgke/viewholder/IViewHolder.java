@@ -3,8 +3,6 @@ package com.wgke.viewholder;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.IdRes;
-import android.support.annotation.StringRes;
 import android.text.TextWatcher;
 import android.text.method.MovementMethod;
 import android.view.View;
@@ -16,6 +14,9 @@ import android.widget.Adapter;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+
+import androidx.annotation.IdRes;
+import androidx.annotation.StringRes;
 
 /**
  * Created by wangke on 2018/11/15.

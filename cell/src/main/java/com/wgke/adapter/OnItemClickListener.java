@@ -1,6 +1,6 @@
 package com.wgke.adapter;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by wangke on 2018/11/15.

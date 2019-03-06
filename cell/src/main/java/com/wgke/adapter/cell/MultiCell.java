@@ -5,14 +5,15 @@ package com.wgke.adapter.cell;
  */
 
 
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
 
 import com.wgke.viewholder.RVViewHolder;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.Nullable;
 
 public class MultiCell<T> extends BaseCell {
     private T data;

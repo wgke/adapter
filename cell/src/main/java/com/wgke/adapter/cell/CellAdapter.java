@@ -1,9 +1,6 @@
 package com.wgke.adapter.cell;
 
 import android.content.Context;
-import android.support.annotation.LayoutRes;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.SparseIntArray;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +12,11 @@ import com.wgke.viewholder.RVViewHolder;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import androidx.annotation.LayoutRes;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 /**
  * Created by wangke on 2018/11/15.
@@ -275,8 +277,8 @@ public final class CellAdapter extends BaseObjectRecyclerAdapter<Cell, RVViewHol
                 Cell cell = (Cell)this.getDataAt(position - validHeaderCount);
                 if(cell.getSpanSize() == -1) {
                     ViewGroup.LayoutParams lp = holder.itemView.getLayoutParams();
-                    if(lp != null && lp instanceof android.support.v7.widget.StaggeredGridLayoutManager.LayoutParams) {
-                        android.support.v7.widget.StaggeredGridLayoutManager.LayoutParams p = (android.support.v7.widget.StaggeredGridLayoutManager.LayoutParams)lp;
+                    if(lp != null && lp instanceof  StaggeredGridLayoutManager.LayoutParams) {
+                         StaggeredGridLayoutManager.LayoutParams p = (StaggeredGridLayoutManager.LayoutParams)lp;
                         p.setFullSpan(true);
                     }
                 }

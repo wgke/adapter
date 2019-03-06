@@ -4,11 +4,12 @@ package com.wgke.adapter.cell;
  * Created by wangke on 2018/11/15.
  */
 
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
 
 import com.wgke.adapter.cell.ob.CellObserver;
 import com.wgke.viewholder.RVViewHolder;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.Nullable;
 
 public interface Cell {
     int FULL_SPAN = -1;
