@@ -1,12 +1,11 @@
-package com.wake.recyclerView.adapter.cell;
+package com.wgke.adapter.cell;
 
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 
-
-import com.wake.recyclerView.adapter.cell.ob.CellObservable;
-import com.wake.recyclerView.adapter.cell.ob.CellObserver;
-import com.wake.recyclerView.viewholder.RVViewHolder;
+import com.wgke.adapter.cell.ob.CellObservable;
+import com.wgke.adapter.cell.ob.CellObserver;
+import com.wgke.viewholder.RVViewHolder;
 
 import java.util.ArrayList;
 import java.util.HashMap;

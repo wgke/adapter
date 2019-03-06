@@ -1,6 +1,6 @@
-package com.wake.recyclerView.adapter.cell;
+package com.wgke.adapter.cell;
 
-import com.wake.recyclerView.viewholder.RVViewHolder;
+import com.wgke.viewholder.RVViewHolder;
 
 /**
  * Created by wangke on 2018/11/15.

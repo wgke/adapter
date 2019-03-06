@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.wake.recyclerView.adapter.cell.Cell;
-import com.wake.recyclerView.adapter.cell.CellAdapter;
-import com.wake.recyclerView.adapter.cell.DataBinder;
-import com.wake.recyclerView.adapter.cell.MultiCell;
-import com.wake.recyclerView.viewholder.RVViewHolder;
+import com.wgke.adapter.cell.Cell;
+import com.wgke.adapter.cell.CellAdapter;
+import com.wgke.adapter.cell.DataBinder;
+import com.wgke.adapter.cell.MultiCell;
+import com.wgke.viewholder.RVViewHolder;
 
 import java.util.ArrayList;
 import java.util.Arrays;

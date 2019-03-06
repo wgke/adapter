@@ -1,4 +1,4 @@
-package com.wake.recyclerView.adapter;
+package com.wgke.adapter;
 
 import android.support.v7.widget.RecyclerView;
 

@@ -1,4 +1,4 @@
-package com.wake.recyclerView.adapter.cell;
+package com.wgke.adapter.cell;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;
@@ -7,11 +7,10 @@ import android.support.v7.widget.RecyclerView;
 import android.util.SparseIntArray;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.iwcard.myapplication.R;
-import com.wake.recyclerView.adapter.BaseObjectRecyclerAdapter;
-import com.wake.recyclerView.adapter.cell.ob.CellObserver;
-import com.wake.recyclerView.viewholder.RVViewHolder;
+import com.wgke.adapter.BaseObjectRecyclerAdapter;
+import com.wgke.adapter.cell.ob.CellObserver;
+import com.wgke.cell.R;
+import com.wgke.viewholder.RVViewHolder;
 
 import java.util.ArrayList;
 import java.util.Iterator;

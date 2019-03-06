@@ -1,4 +1,4 @@
-package com.wake.recyclerView.adapter;
+package com.wgke.adapter;
 
 /**
  * Created by wangke on 2018/11/15.

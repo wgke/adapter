@@ -1,9 +1,8 @@
-package com.wake.recyclerView.adapter.cell.ob;
+package com.wgke.adapter.cell.ob;
 
 import android.database.Observable;
 
-import com.wake.recyclerView.adapter.cell.BaseCell;
-
+import com.wgke.adapter.cell.BaseCell;
 
 /**
  * Created by wangke on 2018/11/15.

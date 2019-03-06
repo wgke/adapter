@@ -1,4 +1,4 @@
-package com.wake.recyclerView.adapter.cell;
+package com.wgke.adapter.cell;
 
 /**
  * Created by wangke on 2018/11/15.
@@ -8,8 +8,7 @@ package com.wake.recyclerView.adapter.cell;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 
-
-import com.wake.recyclerView.viewholder.RVViewHolder;
+import com.wgke.viewholder.RVViewHolder;
 
 import java.util.ArrayList;
 import java.util.Iterator;

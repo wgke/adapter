@@ -1,7 +1,7 @@
-package com.wake.recyclerView.adapter.cell.ob;
+package com.wgke.adapter.cell.ob;
 
 
-import com.wake.recyclerView.adapter.cell.Cell;
+import com.wgke.adapter.cell.Cell;
 
 /**
  * Created by wangke on 2018/11/15.

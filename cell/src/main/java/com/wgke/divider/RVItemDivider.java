@@ -1,4 +1,4 @@
-package com.wake.recyclerView.divider;
+package com.wgke.divider;
 
 /**
  * Created by wangke on 2018/11/15.

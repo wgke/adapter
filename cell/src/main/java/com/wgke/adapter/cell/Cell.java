@@ -1,4 +1,4 @@
-package com.wake.recyclerView.adapter.cell;
+package com.wgke.adapter.cell;
 
 /**
  * Created by wangke on 2018/11/15.
@@ -7,8 +7,8 @@ package com.wake.recyclerView.adapter.cell;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 
-import com.wake.recyclerView.adapter.cell.ob.CellObserver;
-import com.wake.recyclerView.viewholder.RVViewHolder;
+import com.wgke.adapter.cell.ob.CellObserver;
+import com.wgke.viewholder.RVViewHolder;
 
 public interface Cell {
     int FULL_SPAN = -1;

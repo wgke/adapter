@@ -1,4 +1,4 @@
-package com.wake.recyclerView.viewholder;
+package com.wgke.viewholder;
 
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
