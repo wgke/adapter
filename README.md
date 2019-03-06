@@ -3,13 +3,27 @@ recyclerview 配套使用adapter
 
 使用方式：
 rv.setAdapter(cellAdapter);
-        List<Cell> cells = new ArrayList<>();
-        for (String 对象 : list) {
+
+List<Cell> cells = new ArrayList<>();
+for (String 对象 : list) {
             cells.add(MultiCell.convert(你的布局ID, 对象, new DataBinder<对象>() {
                 @Override
                 public void bindData(RVViewHolder var1, String var2) {
 
                 }
             }));
-        }
-        cellAdapter.setDataList(cells);
+}
+cellAdapter.setDataList(cells);
+
+gradle:
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+app gradle:
+dependencies {
+	        implementation 'com.github.wgke:adapter:1.0'
+	}
