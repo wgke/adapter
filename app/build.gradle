@@ -12,7 +12,6 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName "1.0"
-        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -28,10 +27,16 @@ android {
         exclude 'META-INF/license'
         exclude 'META-INF/license.txt'
     }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    //implementation "com.android.support:recyclerview-v7:$supportVersion"
     implementation 'androidx.recyclerview:recyclerview:+'
     implementation project(':cell')
 }

@@ -19,17 +19,19 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
+import androidx.annotation.Nullable;
+import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 /**
- *
  * Created by wangke on 2018/11/15.
  */
 
 public class RVViewHolder extends ViewHolder implements IViewHolder {
     private int layoutId;
     private IViewHolder viewHolderDelegate;
+    private ViewDataBinding mViewDataBinding;
 
     public static RVViewHolder create(Context context, int layoutId, ViewGroup root) {
         View mConvertView = LayoutInflater.from(context).inflate(layoutId, root, false);
@@ -41,6 +43,7 @@ public class RVViewHolder extends ViewHolder implements IViewHolder {
     public static RVViewHolder create(View itemView) {
         return new RVViewHolder(itemView);
     }
+
 
     private RVViewHolder(View itemView) {
         super(itemView);
@@ -61,6 +64,20 @@ public class RVViewHolder extends ViewHolder implements IViewHolder {
 
     public View getView() {
         return this.getViewHolderDelegate().getView();
+    }
+
+    public ViewDataBinding getViewDataBinding() {
+        return mViewDataBinding;
+    }
+
+    public ViewDataBinding initViewDataBinding(int variableId, @Nullable Object value){
+        getViewDataBinding().setVariable(variableId,value);
+        getViewDataBinding().executePendingBindings();
+        return getViewDataBinding();
+    }
+
+    public void setViewDataBinding(ViewDataBinding viewDataBinding) {
+        mViewDataBinding = viewDataBinding;
     }
 
     public IViewHolder setText(int viewId, CharSequence charSequence) {
