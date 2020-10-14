@@ -25,5 +25,5 @@ allprojects {
 
 app gradle:
 dependencies {
-	        implementation 'com.github.wgke:adapter:1.0'
+	        implementation 'com.github.wgke:adapter:1.1'
 	}
